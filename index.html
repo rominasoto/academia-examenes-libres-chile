@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Academia Exámenes Libres Chile</title>
+
+<meta name="description" content="Preparación académica online para Exámenes Libres del Ministerio de Educación.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:#f8fafc;
+color:#1e293b;
+line-height:1.6;
+}
+
+:root{
+--azul:#14b8a6;
+--turquesa:#0ea5a4;
+--naranjo:#f97316;
+--celeste:#38bdf8;
+--gris:#64748b;
+--blanco:#ffffff;
+}
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.topbar{
+background:linear-gradient(90deg,var(--azul),var(--turquesa));
+color:white;
+text-align:center;
+padding:12px;
+font-weight:600;
+font-size:14px;
+}
+
+header{
+background:white;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:140px;
+transition:.3s;
+}
+
+.logo h1{
+font-size:22px;
+color:var(--azul);
+}
+
+.menu{
+display:flex;
+gap:25px;
+}
+
+.menu a{
+text-decoration:none;
+color:var(--turquesa);
+font-weight:600;
+transition:.3s;
+}
+
+.menu a:hover{
+color:var(--naranjo);
+}
+
+.hero{
+padding:90px 0;
+background:linear-gradient(135deg,#ffffff,#f0fdfa);
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.hero h2{
+font-size:52px;
+line-height:1.2;
+color:var(--azul);
+margin-bottom:25px;
+}
+
+.hero p{
+font-size:20px;
+color:var(--gris);
+margin-bottom:30px;
+}
+
+.botones{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 30px;
+border-radius:10px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.btn-principal{
+background:linear-gradient(135deg,var(--turquesa),var(--azul));
+}
+
+.btn-principal:hover{
+transform:translateY(-3px);
+}
+
+.btn-secundario{
+background:linear-gradient(135deg,var(--naranjo),var(--turquesa));
+}
+
+.btn-secundario:hover{
+transform:translateY(-3px);
+}
+
+.hero img{
+width:100%;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+section{
+padding:90px 0;
+}
+
+.titulo-seccion{
+text-align:center;
+margin-bottom:50px;
+}
+
+.titulo-seccion h3{
+font-size:40px;
+color:var(--azul);
+margin-bottom:10px;
+}
+
+.titulo-seccion p{
+color:var(--gris);
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+border-top:4px solid #14b8a6;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h4{
+color:var(--turquesa);
+}
+
+.destacado{
+background:linear-gradient(135deg,#14b8a6,#14b8a6);
+color:white;
+padding:40px;
+border-radius:25px;
+}
+
+.destacado h3{
+color:white;
+}
+
+footer{
+background:linear-gradient(135deg,var(--azul),var(--turquesa));color:white;
+padding:60px 0;
+text-align:center;
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 5px 20px rgba(0,0,0,.25);
+}
+
+@media(max-width:900px){
+
+.hero-grid{
+grid-template-columns:1fr;
+}
+
+.hero h2{
+font-size:38px;
+}
+
+.menu{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="topbar">
+🎓 MATRÍCULAS 2027 ABIERTAS · INICIO DE CLASES MARZO 2027 · CUPOS LIMITADOS
+</div>
+
+<header>
+
+<div class="container nav">
+
+<div class="logo">
+
+<img src="logo-aelc.png" alt="Academia Exámenes Libres Chile">
+
+<h1>AELC</h1>
+
+</div>
+
+<nav class="menu">
+
+<div style="text-align: center; padding: 10px; background-color: #ffffff;">
+    <a href="#nosotros">Nosotros</a> | 
+    <a href="#examenes">Exámenes Libres</a> | 
+    <a href="#niveles">Niveles</a> | 
+    <a href="#matriculas">Matrículas</a> | 
+    <a href="#contacto">Contacto</a> |
+    <strong style="color: #14b8a6;"> </strong>
+    <a href="https://jumbled-note-d31.notion.site/Aula-Virtual-AELC-384818942131809388f7d3aad78ab73c?source=copy_link"
+   target="_blank"
+   style="
+   background:#f97316;
+   color:white;
+   padding:10px 18px;
+   border-radius:8px;
+   text-decoration:none;
+   font-weight:700;">
+   🔐 Aula Virtual
+</a> 
+    </div>
+
+</header>
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<h2>
+Academia Exámenes Libres Chile
+</h2>
+
+<p>
+
+Preparación académica online para Exámenes Libres del Ministerio de Educación.
+
+Clases en vivo, acompañamiento docente, material académico y preparación especializada para estudiantes desde 5° Básico a 4° Medio.
+
+</div>
+
+<div class="botones">
+
+<a href="#contacto" class="btn btn-principal">
+Solicita una Entrevista Informativa
+</a>
+
+<a href="#matriculas" class="btn btn-secundario">
+Ver Matrículas 2027
+</a>
+
+</div>
+
+</div>
+
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 40px; max-width: 1100px; margin: 0 auto; background-color: #f8f9fa; border-radius: 20px;">
+    
+    
+      <div style="flex: 0 0 60%;">
+        <img src="imagen2.jpg" 
+             alt="Niños estudiando con tablets" 
+             style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 8px 15px rgba(0,0,0,0.1);">
+    </div>
+
+</div>
+
+</section>
+<!-- QUIÉNES SOMOS -->
+
+<section id="nosotros">
+
+<div class="container">
+
+<div class="titulo-seccion">
+
+<h3>¿Quiénes Somos?</h3>
+
+<p>
+Formando estudiantes para enfrentar con éxito los Exámenes Libres.
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>Academia Exámenes Libres Chile</h4>
+
+<p>
+
+Somos una academia online especializada en la preparación de estudiantes para la rendición de Exámenes Libres del Ministerio de Educación.
+
+Nuestro propósito es brindar una preparación académica rigurosa, organizada y centrada en las necesidades de cada estudiante, mediante clases en vivo, material de apoyo y acompañamiento permanente.
+
+</p>
+<div style="text-align: center; margin: 30px 0;">
+<img src="imagen1.jpg"
+     alt="Academia Exámenes Libres Chile"
+     style="max-width:50%; height:auto; border-radius:15px; box-shadow:0 10px 20px rgba(0,0,0,0.15);">
+
+</div>
+</div>
+
+<div class="card">
+
+<h4>Nuestra Experiencia</h4>
+
+<p>
+Nuestro enfoque se basa en una preparación estructurada, recursos académicos de calidad y un acompañamiento constante que permita a los estudiantes avanzar con seguridad hacia sus metas educativas.
+
+</p>
+<div style="text-align: center; margin: 30px 0;">
+    <img src="imagen3.jpg" 
+         alt="Profesor AELC realizando clase online" 
+         style="max-width: 60%; height: auto; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.15);">
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+<!-- MISIÓN VISIÓN Y VALORES -->
+
+<section style="background:#ffffff;">
+
+<div class="container">
+
+<div class="titulo-seccion">
+
+<h3>Misión, Visión y Valores</h3>
+
+<p>
+Los principios que orientan nuestro trabajo educativo.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h4>🎯 Misión</h4>
+
+<p>
+
+Brindar una preparación académica de excelencia para estudiantes que rinden Exámenes Libres, mediante clases en vivo, acompañamiento docente y estrategias de aprendizaje que favorezcan el éxito académico.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>🌟 Visión</h4>
+
+<p>
+
+Ser una academia online reconocida en Chile por la calidad de su preparación para Exámenes Libres, promoviendo oportunidades educativas que permitan a los estudiantes alcanzar sus metas académicas y personales.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>📚 Valores</h4>
+
+<p>
+
+• Excelencia Académica<br>
+• Responsabilidad<br>
+• Compromiso<br>
+• Respeto<br>
+• Integridad<br>
+• Perseverancia
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EXÁMENES LIBRES -->
+
+<section id="examenes">
+
+<div class="container">
+
+<div class="titulo-seccion">
+
+<h3>¿Qué son los Exámenes Libres?</h3>
+
+<p>
+Una alternativa oficial para validar estudios.
+</p>
+
+</div>
+
+<div class="destacado">
+
+<p style="font-size:20px;">
+
+Los Exámenes Libres son evaluaciones autorizadas por el Ministerio de Educación que permiten validar estudios de enseñanza básica o media sin asistir regularmente a un establecimiento educacional tradicional.
+
+<br><br>
+
+Esta modalidad representa una alternativa para estudiantes que requieren una formación más flexible, permitiéndoles certificar oficialmente sus estudios.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- A QUIÉN ESTÁ DIRIGIDO -->
+
+<section>
+
+<div class="container">
+
+<div class="titulo-seccion">
+
+<h3>¿A Quién Está Dirigido?</h3>
+
+<p>
+Nuestro programa está pensado para diferentes realidades educativas.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h4>🏡 Educación en Casa</h4>
+
+<p>
+
+Estudiantes que desarrollan procesos educativos desde el hogar.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>🏃 Deportistas</h4>
+
+<p>
+
+Jóvenes que requieren una modalidad flexible compatible con entrenamientos y competencias.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>🎭 Artistas</h4>
+
+<p>
+
+Estudiantes con actividades artísticas que necesitan compatibilizar horarios.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>👨‍👩‍👧‍👦 Familias</h4>
+
+<p>
+
+Familias que buscan una alternativa educativa flexible y personalizada.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+</section>
+<!-- NIVELES ACADÉMICOS -->
+
+<section id="niveles" style="background:#ffffff;">
+
+<div class="container">
+
+<div class="titulo-seccion">
+
+<h3>Niveles Académicos</h3>
+
+<p>
+Preparación académica desde 5° Básico hasta 4° Medio.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card"><h4>5° Básico</h4></div>
+
+<div class="card"><h4>6° Básico</h4></div>
+
+<div class="card"><h4>7° Básico</h4></div>
+
+<div class="card"><h4>8° Básico</h4></div>
+
+<div class="card"><h4>1° Medio</h4></div>
+
+<div class="card"><h4>2° Medio</h4></div>
+
+<div class="card"><h4>3° Medio</h4></div>
+
+<div class="card"><h4>4° Medio</h4></div>
+
+</div>
+
+<br><br>
+
+<div class="destacado">
+
+
+<div style="max-width: 900px; margin: 60px auto; padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center;">
+    <h2 style="color: #14b8a6; margin-bottom: 40px;">Nuestro Proceso de Admisión 2027</h2>
+    
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+        <div style="flex: 1; min-width: 200px;">
+            <div style="font-size: 40px; margin-bottom: 10px;">1️⃣</div>
+            <h4 style="color: #f97316; margin: 10px 0;">Ficha de Inscripción</h4>
+            <p style="font-size: 14px; color: #666;">Completa tus datos en nuestro formulario oficial.</p>
+        </div>
+        
+        <div style="flex: 1; min-width: 200px;">
+            <div style="font-size: 40px; margin-bottom: 10px;">2️⃣</div>
+            <h4 style="color: #f97316; margin: 10px 0;">Confirmación de Pago</h4>
+            <p style="font-size: 14px; color: #666;">Realiza el pago de matrícula para asegurar el cupo.</p>
+        </div>
+        
+        <div style="flex: 1; min-width: 200px;">
+            <div style="font-size: 40px; margin-bottom: 10px;">3️⃣</div>
+            <h4 style="color: #f97316; margin: 10px 0;">Bienvenida AELC</h4>
+            <p style="font-size: 14px; color: #666;">Te contactaremos para dar inicio a la preparación.</p>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROGRAMA -->
+
+<section>
+
+<div class="container">
+
+<div class="titulo-seccion">
+
+<h3>Programa de Preparación Integral</h3>
+
+<p>
+Preparación académica diseñada para Exámenes Libres.
+</p>
+
+</div>
+
+<div class="destacado">
+
+<p style="font-size:20px;">
+
+La Academia Exámenes Libres Chile ofrece un programa de preparación académica desarrollado entre marzo y octubre, diseñado para fortalecer los aprendizajes y preparar a los estudiantes para la rendición de Exámenes Libres mediante clases en vivo, material de apoyo y seguimiento académico.
+
+<br><br>
+
+La planificación académica podrá ajustarse de acuerdo con las necesidades formativas de cada grupo y los requerimientos propios del proceso educativo.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ÁREAS DE APRENDIZAJE -->
+
+<section style="background:#ffffff;">
+
+<div class="container">
+
+<div class="titulo-seccion">
+
+<h3>Áreas de Aprendizaje</h3>
+
+<p>
+Preparación en las principales asignaturas evaluadas en Exámenes Libres.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h4>📖 Lengua y Literatura</h4>
+
+<p>
+Comprensión lectora, producción escrita y habilidades comunicativas.
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>🔢 Matemática</h4>
+
+<p>
+Desarrollo del pensamiento lógico y resolución de problemas.
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>🔬 Ciencias Naturales</h4>
+
+<p>
+Contenidos de biología, física y química según nivel.
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>🌎 Historia y Ciencias Sociales</h4>
+
+<p>
+Historia, geografía y formación ciudadana.
+</p>
+
+</div>
+
+<div class="card">
+
+<div style="display: flex; align-items: center; gap: 10px; margin: 10px 0;">
+    <img src="imagen5.jpg" alt="Icono Inglés" style="width: 30px; height: 30px; object-fit: contain;">
+    <h3 style="margin: 0;">Inglés</h3>
+</div>
+
+<p>
+Comprensión y uso del idioma inglés acorde al nivel educativo.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- NUESTRO COMPROMISO -->
+
+<section>
+
+<div class="container">
+
+<div class="titulo-seccion">
+
+<h3>Nuestro Compromiso</h3>
+
+<p>
+Acompañar a cada estudiante durante todo su proceso de preparación.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h4>👩‍🏫 Clases en Vivo</h4>
+<p>Interacción directa con docentes especializados.</p>
+</div>
+
+<div class="card">
+<h4>📚 Material Académico</h4>
+<p>Recursos de apoyo diseñados para fortalecer los aprendizajes.</p>
+</div>
+
+<div class="card">
+<h4>📝 Evaluaciones</h4>
+<p>Monitoreo permanente del progreso académico.</p>
+</div>
+
+<div class="card">
+<h4>📈 Seguimiento</h4>
+<p>Acompañamiento orientado al logro de metas educativas.</p>
+</div>
+
+<div class="card">
+<h4>🤝 Comunicación</h4>
+<p>Contacto permanente con las familias.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- POR QUÉ ELEGIRNOS -->
+
+<section style="background:#ffffff;">
+
+<div class="container">
+
+<div class="titulo-seccion">
+
+<h3>¿Por Qué Elegirnos?</h3>
+
+<p>
+Razones para confiar en nuestra preparación académica.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h4>🎯 Especialización</h4>
+
+<p>
+Programa enfocado específicamente en Exámenes Libres.
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>💻 Modalidad Online</h4>
+
+<p>
+Acceso desde cualquier lugar con conexión a internet.
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>📘 Material de Estudio</h4>
+
+<p>
+Apoyo académico permanente para reforzar contenidos.
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>📝 Ensayos y Evaluaciones</h4>
+
+<p>
+Preparación constante para enfrentar el proceso con seguridad.
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>👥 Grupos Reducidos</h4>
+
+<p>
+Cupos limitados para favorecer una atención personalizada.
+</p>
+
+</div>
+
+</div>
+<div style="max-width: 1000px; margin: 50px auto; padding: 20px; text-align: center;">
+    <h2 style="color: #14b8a6; margin-bottom: 30px;">Nuestro Proceso de Admisión 2027</h2>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+        <div style="width: 200px;">
+            <div style="font-size: 30px; margin-bottom: 10px;">1️⃣</div>
+            <strong>Ficha de Inscripción</strong>
+            <p style="font-size: 14px; color: #666;">Completa tus datos en nuestro formulario oficial.</p>
+        </div>
+        <div style="width: 200px;">
+            <div style="font-size: 30px; margin-bottom: 10px;">2️⃣</div>
+            <strong>Confirmación de Pago</strong>
+            <p style="font-size: 14px; color: #666;">Realiza el pago de matrícula para asegurar tu cupo.</p>
+        </div>
+        <div style="width: 200px;">
+            <div style="font-size: 30px; margin-bottom: 10px;">3️⃣</div>
+            <strong>Bienvenida AELC</strong>
+            <p style="font-size: 14px; color: #666;">Te contactaremos para iniciar el proceso académico.</p>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</section>
+
+<!-- MATRÍCULAS -->
+
+<section id="matriculas">
+
+<div class="container">
+
+<div class="titulo-seccion">
+
+<h3>Matrículas 2027</h3>
+
+<p>
+Información de inversión académica.
+</p>
+
+</div>
+
+
+<style>
+    /* Estilos específicos para la cuadrícula y alineación */
+    .contenedor-matriculas {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+        max-width: 1000px;
+        margin: 60px auto;
+        padding: 0 20px;
+        align-items: stretch; /* Esto asegura que todos los elementos tengan la misma altura */
+    }
+
+    .tarjeta-pago {
+        background-color: white;
+        border: 1px solid #eee;
+        border-radius: 12px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Mueve el precio y el botón hacia abajo */
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .tarjeta-pago:hover {
+        transform: translateY(-3px);
+    }
+
+     .precio-pago{
+     font-size:40px;
+     font-weight:bold;
+     color:#f97316;
+     }
+
+    .tarjeta-pago p {
+        color: #666;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        flex-grow: 1; /* El párrafo ocupa todo el espacio disponible */
+    }
+
+    .precio-pago {
+        font-size: 40px;
+        font-weight: bold;
+        color: #14b8a6;
+        margin-bottom: 15px;
+    }
+
+    .subtexto-pago {
+    font-size: 14px;
+    color: #888;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+.boton-matricula {
+    display: inline-block;
+    background: linear-gradient(135deg,#14b8a6,#f97316);
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.boton-matricula:hover {
+    opacity: .9;
+    transform: translateY(-2px);
+}
+
+    /* Estilos responsive para celulares */
+    @media (max-width: 768px) {
+        .contenedor-matriculas {
+            grid-template-columns: 1fr;
+            margin: 40px auto;
+        }
+    }
+</style>
+
+<div class="contenedor-matriculas">
+    
+    <div class="tarjeta-pago" style="border: 2px solid #14b8a6; background-color: #f0fdfa;">
+        <h3>Ficha de Inscripción</h3>
+        <p>Inicia el proceso completando nuestra ficha oficial. Luego de enviarla, serás redirigido al pago.</p>
+        <div>
+            <div class="precio-pago">$70.000</div>
+            <div class="subtexto-pago">Pago único anual.</div>
+            <a href="https://forms.gle/YRjp2ywEKphLYxz3A" 
+               target="_blank" 
+               class="boton-matricula">
+               Completar Ficha de Matrícula
+            </a>
+        </div>
+    </div>
+
+    <div class="tarjeta-pago">
+    <h3>Arancel Mensual</h3>
+    <p>Una vez matriculado, puedes realizar el pago del arancel mensual de forma segura.</p>
+    <div>
+        <div class="precio-pago">$120.000</div>
+        <div class="subtexto-pago">Valor mensual del programa.</div>
+        
+        <div style="font-size: 13px; color: #555; margin-bottom: 20px; font-style: italic;">
+            Período: <strong>marzo a octubre</strong>.<br>
+            Fecha de pago: <strong>1° de cada mes</strong>.
+        </div>
+
+       <a href="https://www.paypal.com/ncp/payment/YAGPSD72R3QJ6"
+   target="_blank"
+   class="boton-matricula"
+   style="background:#ffffff;color:#f97316;border:2px solid #f97316;border-radius:8px;font-weight:700;">
+   Pagar Arancel aquí
+</a>
+    </div>
+</div>
+
+        <p style="margin-top: 15px; font-size: 14px; color: #555;">
+        *Serás redirigido al sitio seguro de PayPal. 
+        <br>Por favor, envíanos el comprobante a nuestro correo una vez realizado el pago.
+    </p>
+</div>
+
+<p style="font-size: 12px; color: #999; text-align: center; margin-top: 20px;">
+    * Academia Exámenes Libres Chile respeta la privacidad de tus datos personales, los cuales son utilizados exclusivamente para fines de admisión y gestión académica.
+</p>
+</div>
+
+</div>
+<div style="text-align: center; margin: 40px auto; max-width: 800px; padding: 25px; background-color: #f8f9fa; border-left: 4px solid #14b8a6; border-radius: 8px;">
+    <p style="font-size: 15px; color: #444; line-height: 1.6; margin: 0;">
+        <strong style="color: #14b8a6;">💡 Información sobre Exámenes Libres:</strong> 
+        En Academia AELC, dominamos los requisitos y procesos del 
+        <a href="https://www.mineduc.cl" target="_blank" style="color: #f97316; text-decoration: none; font-weight: bold;">Ministerio de Educación (MINEDUC)</a>. 
+        Te asesoramos en cada paso para que tu proceso de validación sea fluido, seguro y exitoso. 
+        <strong>Tu tranquilidad académica es nuestro compromiso.</strong>
+    </p>
+</div>
+
+<br><br>
+
+<div class="destacado">
+<h3 style="color: #ffffff; text-align: center; margin-bottom: 25px; border-bottom: 2px solid #ffffff; display: inline-block; padding-bottom: 10px; font-weight: bold;">
+    ¿Qué incluye nuestro programa?
+</h3>
+
+<p>
+
+✅ Clases en vivo.<br><br>
+
+✅ Material académico digital.<br><br>
+
+✅ Evaluaciones periódicas.<br><br>
+
+✅ Ensayos de preparación.<br><br>
+
+✅ Seguimiento académico.<br><br>
+
+✅ Acompañamiento docente.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- TESTIMONIOS -->
+
+<section style="background:#ffffff;">
+
+<div class="container">
+
+<div class="titulo-seccion">
+
+<h3>Testimonios</h3>
+
+<p>
+Opiniones referenciales de familias que valoran una preparación académica organizada y personalizada.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<p>
+
+"Excelente organización y acompañamiento durante todo el proceso académico."
+
+</p>
+
+<br>
+
+<strong>
+María González Rojas
+</strong>
+
+</div>
+
+<div class="card">
+
+<p>
+
+"Una experiencia educativa seria, cercana y comprometida con el aprendizaje."
+
+</p>
+
+<br>
+
+<strong>
+Felipe Muñoz Hernández
+</strong>
+
+</div>
+
+<div class="card">
+
+<p>
+
+"Valoramos especialmente la comunicación permanente y el apoyo entregado a nuestro hijo."
+
+</p>
+
+<br>
+
+<strong>
+Daniela Soto Carrasco
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PREGUNTAS FRECUENTES -->
+
+<section>
+
+<div class="container">
+
+<div class="titulo-seccion">
+
+<h3>Preguntas Frecuentes</h3>
+
+<p>
+Resolvemos algunas de las consultas más habituales.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h4>¿Los Exámenes Libres son oficiales?</h4>
+
+<p>
+
+Sí. Son evaluaciones autorizadas por el Ministerio de Educación para validar estudios.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>¿Las clases son en vivo?</h4>
+
+<p>
+
+Sí. Todas nuestras clases se realizan en modalidad online en vivo.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>¿Quiénes pueden rendir Exámenes Libres?</h4>
+
+<p>
+
+Toda persona que cumpla los requisitos establecidos por el Ministerio de Educación.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h4>¿Cómo puedo obtener más información?</h4>
+
+<p>
+
+Puedes solicitar una entrevista informativa a través del formulario de contacto.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section id="contacto" style="background:#ffffff;">
+
+<div class="container">
+
+<div class="titulo-seccion">
+
+<h3>Solicita una Entrevista Informativa</h3>
+
+<p>
+Conoce nuestro programa académico y proceso de admisión 2027.
+</p>
+
+</div>
+
+<form
+id="formulario-contacto"
+action="https://formspree.io/f/mljgbpdg"
+method="POST"
+style="
+max-width:700px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:25px;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
+">
+
+<input
+type="text"
+name="nombre_estudiante"
+placeholder="Nombre del estudiante"
+required
+style="
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+">
+
+<input
+type="text"
+name="curso"
+placeholder="Curso de interés"
+required
+style="
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+">
+
+<input
+type="email"
+name="email"
+placeholder="Correo electrónico"
+required
+style="
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+">
+
+<input
+type="text"
+name="whatsapp"
+placeholder="WhatsApp"
+required
+style="
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+">
+
+<textarea
+name="consulta"
+placeholder="Escribe tu consulta"
+required
+style="
+width:100%;
+height:140px;
+padding:15px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+margin-bottom:20px;
+"></textarea>
+
+<button
+type="submit"
+style="
+background:#14b8a6;
+color:white;
+border:none;
+padding:15px 35px;
+border-radius:10px;
+font-size:16px;
+font-weight:700;
+cursor:pointer;
+">
+
+Enviar Solicitud
+
+</button>
+
+<div
+id="mensaje-exito"
+style="
+display:none;
+margin-top:25px;
+padding:20px;
+background:#ecfdf5;
+border:2px solid #14b8a6;
+border-radius:12px;
+color:#0f766e;
+text-align:center;
+font-weight:600;
+">
+
+🎓 ¡Solicitud enviada correctamente!
+
+<br><br>
+
+Gracias por contactar a Academia Exámenes Libres Chile.
+Hemos recibido tus datos y nos pondremos en contacto contigo a la brevedad.
+
+</div>
+
+<div
+id="mensaje-error"
+style="
+display:none;
+margin-top:25px;
+padding:20px;
+background:#fff7ed;
+border:2px solid #f97316;
+border-radius:12px;
+color:#c2410c;
+text-align:center;
+font-weight:600;
+">
+
+⚠️ No pudimos enviar tu solicitud.
+<br>
+Por favor, inténtalo nuevamente.
+
+</div>
+
+</form>
+
+<script>
+
+const formulario = document.getElementById("formulario-contacto");
+const mensajeExito = document.getElementById("mensaje-exito");
+const mensajeError = document.getElementById("mensaje-error");
+
+formulario.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    const boton = formulario.querySelector("button[type='submit']");
+
+    boton.disabled = true;
+    boton.textContent = "Enviando...";
+
+    mensajeExito.style.display = "none";
+    mensajeError.style.display = "none";
+
+    const datos = new FormData(formulario);
+
+    try {
+
+        const respuesta = await fetch(formulario.action, {
+            method: "POST",
+            body: datos,
+            headers: {
+                "Accept": "application/json"
+            }
+        });
+
+        if (respuesta.ok) {
+
+            formulario.reset();
+
+            boton.disabled = false;
+            boton.textContent = "Enviar Solicitud";
+
+            mensajeExito.style.display = "block";
+
+        } else {
+
+            throw new Error("Error al enviar");
+
+        }
+
+    } catch (error) {
+
+        boton.disabled = false;
+        boton.textContent = "Enviar Solicitud";
+
+        mensajeError.style.display = "block";
+
+    }
+
+});
+
+</script>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<img
+src="logo-aelc.png"
+alt="Academia Exámenes Libres Chile"
+style="
+width:180px;
+margin-bottom:20px;
+">
+
+<h3 style="margin-bottom:10px;">
+Academia Exámenes Libres Chile
+</h3>
+
+<p style="margin-bottom:25px;">
+Preparación académica online para Exámenes Libres.
+</p>
+
+<p>
+🎓 Matrículas 2027 Abiertas
+</p>
+
+<br>
+
+<p>
+📧 admision@academiaexameneslibreschile.com
+</p>
+
+<p>
+📱 +56 9 45214561
+</p>
+
+<br>
+
+<p style="font-size:14px;opacity:.8;">
+© 2021 Academia Exámenes Libres Chile. Todos los derechos reservados.
+</p>
+
+</div>
+
+</footer>
+
+<!-- BOTÓN WHATSAPP -->
+
+<a
+href="https://wa.me/56945214561"
+target="_blank"
+class="whatsapp">
+
+💬
+
+</a>
+
+</body>
+
+</html>
