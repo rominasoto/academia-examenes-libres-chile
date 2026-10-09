@@ -238,21 +238,92 @@ text-decoration:none;
 box-shadow:0 5px 20px rgba(0,0,0,.25);
 }
 
-@media(max-width:900px){
-
-.hero-grid{
-grid-template-columns:1fr;
+```css
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-.hero h2{
-font-size:38px;
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-.menu{
-display:none;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
 }
+
+@media (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 92%;
+    }
+
+    section {
+        padding: 45px 0;
+    }
+
+    .hero {
+        padding: 45px 0;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .titulo-seccion h3 {
+        font-size: 28px;
+    }
+
+    .destacado {
+        padding: 22px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .logo h1 {
+        font-size: 17px;
+    }
+
+    .whatsapp {
+        width: 52px;
+        height: 52px;
+        right: 15px;
+        bottom: 15px;
+        font-size: 25px;
+    }
+}
+```
 
 </style>
 
