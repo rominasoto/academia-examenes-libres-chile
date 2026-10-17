@@ -1,0 +1,21 @@
+</a>
+    </div>
+
+    <a class="back-link" href="index.html">
+      ← Volver al sitio principal
+    </a>
+
+  </main>
+
+  <script>
+    document
+      .getElementById("login-form")
+      .addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        document.getElementById("aviso").style.display = "block";
+        document.getElementById("contrasena").value = "";
+      });
+  </script>
+</body>
+</html>
