@@ -1,10 +1,161 @@
-</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula Virtual | Academia Exámenes Libres Chile</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #e8fbfa, #f4f5ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      color: #243746;
+    }
+
+    .contenedor {
+      width: 100%;
+      max-width: 440px;
+      background: white;
+      padding: 36px;
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(30, 70, 100, .12);
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      color: #087e8b;
+      font-size: 25px;
+      margin: 0 0 10px;
+    }
+
+    .subtitulo {
+      color: #64748b;
+      line-height: 1.5;
+      margin-bottom: 28px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      font-weight: bold;
+      margin: 16px 0 7px;
+    }
+
+    input {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #cbd5e1;
+      border-radius: 9px;
+      font-size: 16px;
+    }
+
+    input:focus {
+      outline: 2px solid #16a6a1;
+      border-color: #16a6a1;
+    }
+
+    button {
+      width: 100%;
+      border: none;
+      border-radius: 9px;
+      background: #f97316;
+      color: white;
+      padding: 14px;
+      margin-top: 24px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover { background: #ea580c; }
+
+    #aviso {
+      display: none;
+      margin-top: 18px;
+      padding: 12px;
+      border-radius: 8px;
+      background: #fff7ed;
+      color: #9a3412;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 24px;
+      color: #087e8b;
+      text-decoration: none;
+    }
+
+    .back-link:hover { text-decoration: underline; }
+
+    .nota {
+      margin-top: 22px;
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <main class="contenedor">
+    <div class="logo">📚</div>
+
+    <h1>Academia Exámenes Libres Chile</h1>
+
+    <p class="subtitulo">
+      ¡Bienvenido/a a tu Aula Virtual!<br>
+      Tu espacio para aprender y avanzar.
+    </p>
+
+    <form id="login-form">
+      <label for="usuario">Usuario o correo electrónico</label>
+      <input
+        type="text"
+        id="usuario"
+        name="usuario"
+        placeholder="Ingresa tu usuario"
+        autocomplete="username"
+        required>
+
+      <label for="contrasena">Contraseña</label>
+      <input
+        type="password"
+        id="contrasena"
+        name="contrasena"
+        placeholder="Ingresa tu contraseña"
+        autocomplete="current-password"
+        required>
+
+      <button type="submit">Ingresar al Aula Virtual</button>
+    </form>
+
+    <div id="aviso" role="status">
+      Esta portada todavía está en preparación.
+      El inicio de sesión real aún no está habilitado.
+      Por ahora, tus datos no se enviarán ni se verificarán.
     </div>
 
-    <a class="back-link" href="index.html">
+    <a class="back-link" href="https://academiadeexameneslibres.cl/index.html">
       ← Volver al sitio principal
     </a>
 
+    <p class="nota">
+      Academia Exámenes Libres Chile<br>
+      Aprender, avanzar y alcanzar tus metas.
+    </p>
   </main>
 
   <script>
